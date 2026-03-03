@@ -8,7 +8,6 @@ that it behaves like a minimal vector store (add / search / delete).
 
 from __future__ import annotations
 
-import sys
 import tempfile
 from unittest.mock import MagicMock, patch
 

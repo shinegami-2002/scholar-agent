@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 def _run_async(coro):
     """Run an async coroutine from sync context, handling nested event loops."""
     try:
-        loop = asyncio.get_running_loop()
+        asyncio.get_running_loop()
     except RuntimeError:
         return asyncio.run(coro)
 
